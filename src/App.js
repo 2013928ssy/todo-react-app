@@ -40,9 +40,9 @@ class App extends React.Component {
         var todoItems =this.state.items.length >0 &&(
             <Paper style={{margin:16}}>
                 <List>
-                    {this.state.items.map((item, idx) =>
+                    {this.state.items.map((item, idx) =>(
                         <Todo item={item} key={item.id} delete={this.delete} />
-                    )}
+                    ))}
                 </List>
             </Paper>
         );
